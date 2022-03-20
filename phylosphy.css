@@ -1,0 +1,64 @@
+*{  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#certificate{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 0 50px;
+                margin: 0 200PX 0 200PX;
+            }
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+.certificate{
+    margin: 0 200PX 0 200PX;
+}
+span{
+    text-decoration: solid;
+    text-decoration: black;
+}
+.certificate-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-top: 50px;
+}
+.certificate-images>div{
+   justify-self: start;
+} 
+
+.phylosphy{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 50px;
+    margin:0 200PX 0 200PX;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+#hobby{
+    margin: 0 200PX 0 200PX;
+}
+span{
+    text-decoration: solid;
+    text-decoration: black;
+}
+.hobby-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-top: 50px;
+}
+.images>div {
+   justify-self: start;
+} 
+

@@ -1,0 +1,19 @@
+.footer{
+    padding: 25px 0 50px 0;
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+}
+.footer div {
+/* border: 1px solid red; */
+text-align: center;
+margin: 5px;
+}
+#icons{
+    margin:5px  ;
+}
+span{
+    color:#F28066;
+    text-decoration: underline;
+}

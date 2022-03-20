@@ -1,0 +1,39 @@
+
+.project-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  column-gap:200px;
+  row-gap: 5px  ;
+  /* border: 1px solid red; */
+  background-color: #FFEEE7;
+  }
+  .project-2 {
+    padding: 30px 0px 30px 0px;
+    font-size: 30px;
+    text-align: left; 
+  }
+  #image-2{
+    grid-area: 1/1/6/2;
+  } 
+  #text-part-2{
+    grid-area: 2/2/5/3;
+    }
+
+    #button4-2{
+      background-color:#FFEEE7;
+      border: 2px solid #F28066;
+      cursor: pointer;
+      font-size: 20px;
+      text-align:center;
+      color: #F28066;
+      height: 64px;
+      width: 200px;
+    }
+    #button4-2:hover{
+      background-color:#F28066;
+      color:rgb(255, 255, 255);
+    }
+   
+ 
+ 

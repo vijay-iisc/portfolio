@@ -1,0 +1,33 @@
+#bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 50px;
+    /* border: 1px solid red; */
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+   #bio-Image{
+      grid-area: 1/2/6/3;
+  } 
+  #bio-text{
+    margin-left: 100px;
+    grid-area:2/1/5/2;
+  }
+  #paragraph0{
+    font-size: 25PX;
+  }
+  #button0{
+    width: 200px;
+    height: 64px;
+    font-size: 20px;
+    background-color:#F28066;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-style: hidden;
+  }
+  #button0:hover{
+   background:#eb9f8d;
+   color: rgb(255, 255, 255);
+  } 
+  

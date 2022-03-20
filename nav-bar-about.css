@@ -1,0 +1,47 @@
+
+ #nav-bar-about {
+    display: grid;
+    grid-template-rows:50px;
+    grid-template-columns: 1100px auto auto auto;
+    column-gap:10px;
+    border-bottom: 1px solid grey;
+    background-color: white;
+  }
+  #nav-bar-about {
+    padding:25px 0 0 0;
+    font-size: 20px;
+    text-align:center;
+    align-content: center;
+  }
+ 
+  #Logo
+  {
+     text-align:left;
+    }
+ 
+ a#Work-button-about{
+   color: #000000;
+   text-decoration: none;
+ }
+ a#Work-button-about:hover{
+    color: #f28066;
+    text-decoration: none;
+  }
+ a#about-button-about{
+   color: #f28066;
+   text-decoration: underline;
+ }
+ a#about-button-about:hover{
+   color: #f28066;
+   text-decoration: none;
+ }
+ a#contact-button-about{
+    color: #000000;
+    text-decoration:none;
+  }
+  a#contact-button-about:hover{
+    color: #f28066;
+    text-decoration: none;
+  }
+
+ 
