@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Friends Circle | Class of 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">GFC <span class="logo-year">'24</span></span>
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <ul class="nav-tabs" id="navTabs">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#members" class="nav-link" data-section="members">Members</a></li>
+                <li><a href="#events" class="nav-link" data-section="events">Events</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            </ul>
+
+            <!-- Profile Icon -->
+            <div class="profile-icon">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="profile-dropdown">
+                    <a href="#"><i class="fas fa-user-circle"></i> My Profile</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="slide-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&h=900&fit=crop" alt="Graduation Celebration">
+                    <div class="slide-content">
+                        <h1>Welcome to Our Circle</h1>
+                        <p>Celebrating friendships that last a lifetime</p>
+                        <a href="#members" class="btn-primary">Meet Our Friends</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&h=900&fit=crop" alt="Graduation Day">
+                    <div class="slide-content">
+                        <h1>Class of 2024</h1>
+                        <p>Together we achieved, together we celebrate</p>
+                        <a href="#events" class="btn-primary">View Events</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&h=900&fit=crop" alt="Friends Together">
+                    <div class="slide-content">
+                        <h1>Memories Forever</h1>
+                        <p>Cherishing every moment we shared together</p>
+                        <a href="#gallery" class="btn-primary">Explore Gallery</a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1600&h=900&fit=crop" alt="Campus Life">
+                    <div class="slide-content">
+                        <h1>Our Journey</h1>
+                        <p>From freshers to graduates - what a ride!</p>
+                        <a href="#about" class="btn-primary">Our Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="section members-section" id="members">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Friends Circle</h2>
+                <p class="section-subtitle">Meet the amazing people who made our journey unforgettable</p>
+                <a href="#members" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Member Card 1 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rahul Sharma</h3>
+                        <p class="member-role">Computer Science</p>
+                        <p class="member-quote">"Code, Coffee, Repeat!"</p>
+                    </div>
+                </div>
+
+                <!-- Member Card 2 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Priya Patel</h3>
+                        <p class="member-role">Electronics Engineering</p>
+                        <p class="member-quote">"Dream big, work hard!"</p>
+                    </div>
+                </div>
+
+                <!-- Member Card 3 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Amit Kumar</h3>
+                        <p class="member-role">Mechanical Engineering</p>
+                        <p class="member-quote">"Engineering life!"</p>
+                    </div>
+                </div>
+
+                <!-- Member Card 4 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sneha Reddy</h3>
+                        <p class="member-role">Information Technology</p>
+                        <p class="member-quote">"Stay curious, stay humble"</p>
+                    </div>
+                </div>
+
+                <!-- Member Card 5 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vikram Singh</h3>
+                        <p class="member-role">Civil Engineering</p>
+                        <p class="member-quote">"Building dreams!"</p>
+                    </div>
+                </div>
+
+                <!-- Member Card 6 -->
+                <div class="member-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" alt="Member">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ananya Gupta</h3>
+                        <p class="member-role">Data Science</p>
+                        <p class="member-quote">"Data tells stories"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section events-section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Stay connected with reunions, meetups, and celebrations</p>
+                <a href="#events" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-tag">Reunion</span>
+                        <h3>Annual Reunion 2025</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Campus Auditorium</p>
+                        <p><i class="fas fa-clock"></i> 6:00 PM onwards</p>
+                        <a href="#" class="event-btn">RSVP Now</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-tag online">Online</span>
+                        <h3>Virtual Game Night</h3>
+                        <p><i class="fas fa-video"></i> Zoom Meeting</p>
+                        <p><i class="fas fa-clock"></i> 8:00 PM - 11:00 PM</p>
+                        <a href="#" class="event-btn">Join Event</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">10</span>
+                        <span class="month">May</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-tag">Outdoor</span>
+                        <h3>Picnic & BBQ</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Central Park</p>
+                        <p><i class="fas fa-clock"></i> 11:00 AM - 5:00 PM</p>
+                        <a href="#" class="event-btn">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Memory Lane</h2>
+                <p class="section-subtitle">Relive our beautiful moments together</p>
+                <a href="#gallery" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Graduation Day</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=400&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">College Fest</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=400&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Study Sessions</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Group Projects</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=400&h=400&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Celebrations</span>
+                    </div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=600&fit=crop" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Best Friends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Our Circle</h2>
+                    <p class="highlight">We are the Class of 2024 - a group of dreamers, achievers, and lifelong friends.</p>
+                    <p>Our journey began in the corridors of our beloved college, where strangers became classmates, and classmates became family. Through late-night study sessions, exam stress, college fests, and countless memories, we built bonds that will last a lifetime.</p>
+                    <p>This platform is our digital home - a place to stay connected, share updates, plan reunions, and keep our friendship alive no matter where life takes us.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Years Together</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Memories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=500&fit=crop" alt="Friends Together">
+                    <div class="floating-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Friends Forever</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="logo-text">GFC <span class="logo-year">'24</span></span>
+                    </div>
+                    <p>Keeping our graduation memories alive and friendships strong.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#members">Members</a>
+                    <a href="#events">Events</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Graduation Friends Circle. Made with <i class="fas fa-heart"></i> by Class of '24</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
