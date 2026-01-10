@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Badminton Hosting App</title>
+    <link rel="stylesheet" href="badminton.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <div class="brand__title">Badminton Hosting</div>
+          <div class="brand__subtitle">Host matches • Track scores • Show winners</div>
+        </div>
+        <div class="role">
+          <label class="label" for="roleSelect">Role</label>
+          <select id="roleSelect" class="select">
+            <option value="participant">Participant (read‑only)</option>
+            <option value="host">Host</option>
+            <option value="admin">Admin</option>
+          </select>
+          <button id="logoutBtn" class="btn btn--ghost" type="button">Reset view</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="authCard" hidden>
+        <h2 class="card__title">Enter access code</h2>
+        <p class="muted">
+          This is a static prototype (no backend). Codes only protect actions in this browser.
+        </p>
+        <div class="row row--wrap">
+          <div class="field">
+            <label class="label" for="accessCode">Code</label>
+            <input id="accessCode" class="input" inputmode="numeric" placeholder="e.g. 1234" />
+          </div>
+          <div class="field field--button">
+            <button id="loginBtn" class="btn btn--primary" type="button">Continue</button>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout__title">Default demo codes</div>
+          <div class="callout__body">
+            <div><strong>Host:</strong> <code>1111</code></div>
+            <div><strong>Admin:</strong> <code>9999</code></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <section class="card">
+          <div class="card__head">
+            <h2 class="card__title">Categories</h2>
+            <div class="card__actions">
+              <button id="createCategoryBtn" class="btn btn--primary" type="button" data-requires="host">
+                + Category
+              </button>
+              <button id="exportBtn" class="btn btn--ghost" type="button" data-requires="admin">
+                Export
+              </button>
+              <label class="btn btn--ghost filebtn" data-requires="admin">
+                Import
+                <input id="importInput" type="file" accept="application/json" hidden />
+              </label>
+              <button id="resetDataBtn" class="btn btn--danger" type="button" data-requires="admin">
+                Reset data
+              </button>
+            </div>
+          </div>
+
+          <div class="row row--wrap row--gap">
+            <div class="field">
+              <label class="label" for="categorySelect">Selected category</label>
+              <select id="categorySelect" class="select"></select>
+            </div>
+            <div class="field">
+              <label class="label" for="participantTeamSelect">Participant team</label>
+              <select id="participantTeamSelect" class="select"></select>
+            </div>
+          </div>
+
+          <div id="categorySummary" class="summary"></div>
+        </section>
+
+        <section class="card">
+          <div class="card__head">
+            <h2 class="card__title">Teams</h2>
+            <div class="card__actions">
+              <button id="addTeamBtn" class="btn btn--primary" type="button" data-requires="host">+ Team</button>
+              <button id="generateMatchesBtn" class="btn btn--ghost" type="button" data-requires="host">
+                Generate matches
+              </button>
+            </div>
+          </div>
+          <div id="teamsList" class="list"></div>
+        </section>
+
+        <section class="card">
+          <div class="card__head">
+            <h2 class="card__title">Standings</h2>
+          </div>
+          <div id="standingsTable" class="table-wrap"></div>
+        </section>
+
+        <section class="card">
+          <div class="card__head">
+            <h2 class="card__title">Matches</h2>
+            <div class="card__actions">
+              <button id="startNextMatchBtn" class="btn btn--primary" type="button" data-requires="host">
+                Start next
+              </button>
+            </div>
+          </div>
+          <div id="matchesList" class="list"></div>
+        </section>
+
+        <section class="card" id="liveCard">
+          <div class="card__head">
+            <h2 class="card__title">Live scoring</h2>
+            <div class="pill" id="liveStatusPill">No live match</div>
+          </div>
+          <div id="livePanel" class="live"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="modal" class="modal">
+      <form method="dialog" class="modal__panel">
+        <div class="modal__head">
+          <h3 class="modal__title" id="modalTitle">Modal</h3>
+          <button class="btn btn--ghost" value="cancel" type="submit">Close</button>
+        </div>
+        <div id="modalBody" class="modal__body"></div>
+        <div id="modalActions" class="modal__actions"></div>
+      </form>
+    </dialog>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="muted">
+          Prototype runs fully in your browser via <code>localStorage</code> (no server).
+        </div>
+      </div>
+    </footer>
+
+    <script src="badminton.js"></script>
+  </body>
+</html>
+
